@@ -1,6 +1,6 @@
 # Exportar documento a PDF
 
-Para exportar un documento de office(word,excel,etc) sin ejecutar "Power Automate" o un "Azure function" podemos ejecutar en nuestro código de SPFX el  Java Script(exporFileToPDF.js) y aprovechar la funcionalidad de SharePoint para obtener la URL al PDF que SharePoint genera, esa URL es la mimsa que se utiliza en "Save as PDF" en word on line o Microsoft Graph, con la ventaja que no necesitamos Registrar una App.
+Para exportar un documento de office(word,excel,etc) sin tener un "Power Automate" o un "Azure function" podemos ejecutar en nuestro código de SPFX el  Java Script(exporFileToPDF.js) y aprovechar la funcionalidad de SharePoint para obtener la URL al PDF que SharePoint genera, esa URL es la misma que se utiliza en "Save as PDF" de word on line o la funcionalidad de Export de Microsoft Graph, con la ventaja que no necesitamos Registrar una App.
 
 Solo es necesario adecuar las variables de Javascript
 ```javascript
@@ -19,4 +19,4 @@ Si pegamos esa url en otro navegador podremos ver el PDF.
 
 Ahora  si , solo queda adaptar el código en tu proyecto de SPFX , parametrizar las variables generales y hacer con el PDF lo que quieras.
 
-Tip importante: Esa URL con el PDF se puede compartir con cualquier usuario y siempre mostrará el PDF sin importar si está autenticado o es de otro tenant, pero esa URL solo está disponible unos cuantos minutos.
+Tip: La URL al PDF se puede compartir con cualquier usuario y siempre mostrará el PDF sin importar si está autenticado o es de otro tenant, pero solo está disponible unos cuantos minutos.
