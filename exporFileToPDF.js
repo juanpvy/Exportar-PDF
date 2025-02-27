@@ -2,6 +2,7 @@
 var tenantURL = "https://midominniodev.sharepoint.com";     //tenat
 var siteRelativeURL = "/sites/PlantaMON";                   // url al sitio 
 var folder = "TestBiblioteca";                              // carpeta del archivo
+var subfolder = "";					    // si tiene carpetas,agregar en formato /folder
 var spItemID = "4";                                         // Id del archivo
 
 // URL al endpoint RenderListDataAsStream que es el que nos da la ruta al PDF
